@@ -1,5 +1,10 @@
+import { InputField } from "../components"
+
 export const Login = () => {
   return <>
-    Login
+    <InputField
+      type="text"
+      placeholder="Email"
+    />
   </>
 }

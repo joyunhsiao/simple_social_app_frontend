@@ -25,11 +25,11 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={handleClick}
       className={
         disabled === true ? (
-          "w-full font-bold bg-custom-gray-medium-light text-custom-white border-2 border-custom-gray-darker rounded-lg p-4"
+          "w-full font-azeret font-bold bg-custom-gray-medium-light text-custom-white border-2 border-custom-gray-darker rounded-lg p-4"
         ) : (
           theme === "primary" ? (
-            "w-full font-bold bg-custom-blue text-custom-white border-2 border-custom-black rounded-lg p-4 hover:bg-custom-yellow"
-          ) : ("text-custom-black")
+            "w-full font-azeret font-bold bg-custom-blue text-custom-white border-2 border-custom-black rounded-lg p-4 hover:bg-custom-yellow"
+          ) : ("font-azeret text-custom-black")
         )
       }>
       {text}

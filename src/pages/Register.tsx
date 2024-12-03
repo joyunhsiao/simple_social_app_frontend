@@ -31,8 +31,11 @@ export const Register: React.FC = () => {
 
   return <>
     <h2 className="
+      font-azeret
+      text-center
       text-custom-black
       text-xl
+      mt-2
       mb-9
     ">
       Register

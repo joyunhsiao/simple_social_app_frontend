@@ -568,6 +568,10 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -668,6 +672,10 @@ video {
 
 .font-paytone{
   font-family: Paytone One, sans-serif;
+}
+
+.font-azeret{
+  font-family: Azeret Mono, monospace;
 }
 
 .text-6xl{

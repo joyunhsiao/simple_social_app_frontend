@@ -26,8 +26,11 @@ export const Login: React.FC = () => {
 
   return <>
     <h2 className="
+      font-azeret
+      text-center
       text-custom-black
       text-xl
+      mt-2
       mb-9
     ">
       Expand a new social circle

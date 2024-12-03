@@ -34,7 +34,12 @@ export default {
       },
       backgroundSize: {
         'custom-grid-bg-size': '100% 68px, 68px 100%'
-      }
+      },
+      fontFamily: {
+        'azeret': ['Azeret Mono', 'monospace'],
+        'noto-sans': ['Noto Sans', 'sans-serif'],
+        'paytone': ['Paytone One', 'sans-serif'],
+      },
     },
   },
   plugins: [],

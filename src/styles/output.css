@@ -662,9 +662,47 @@ video {
   padding-bottom: 1rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.font-paytone{
+  font-family: Paytone One, sans-serif;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -679,6 +717,11 @@ video {
 .text-custom-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-custom-blue{
+  --tw-text-opacity: 1;
+  color: rgb(3 67 141 / var(--tw-text-opacity, 1));
 }
 
 html{

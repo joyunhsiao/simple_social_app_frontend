@@ -25,10 +25,14 @@ export const AuthBox: React.FC<AuthBoxProps> = ({ children }) => {
           md:mr-12
       "/>
       <div>
-        <img
-          src="../src/assets/meta_wall.svg"
-          alt="MetaWall logo"
-        />
+        <h1 className="
+          font-paytone
+          text-6xl
+          text-center
+          text-custom-blue
+        ">
+          MetaWall
+        </h1>
         {children}
       </div>
     </div>

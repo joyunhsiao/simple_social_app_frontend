@@ -30,7 +30,7 @@ export const Login: React.FC = () => {
       text-xl
       mb-9
     ">
-      到元宇宙展開全新社交圈
+      Expand a new social circle
     </h2>
 
     <div className="mb-4">
@@ -53,14 +53,14 @@ export const Login: React.FC = () => {
 
     <div className="mb-4">
       <Button
-        text="登入"
+        text="Login"
         onClick={handleSubmit}
       />
     </div>
 
     <div className="flex justify-center">
       <Button
-        text="註冊"
+        text="Register"
         theme="secondary"
         onClick={handleRegister}
       />

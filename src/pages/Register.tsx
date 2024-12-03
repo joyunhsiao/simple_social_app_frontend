@@ -35,13 +35,13 @@ export const Register: React.FC = () => {
       text-xl
       mb-9
     ">
-      註冊
+      Register
     </h2>
 
     <div className="mb-4">
       <InputField
         type="text"
-        placeholder="暱稱"
+        placeholder="Nick Name"
         value={nickNameValue}
         onChange={handleNickNameChange}
       />
@@ -67,14 +67,14 @@ export const Register: React.FC = () => {
 
     <div className="mb-4">
       <Button
-        text="註冊"
+        text="Register"
         onClick={handleSubmit}
       />
     </div>
 
     <div className="flex justify-center">
       <Button
-        text="登入"
+        text="Login"
         theme="secondary"
         onClick={handleLogin}
       />

@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 html {
-  @apply bg-custom-gray-light bg-custom-grid-bg-image bg-custom-grid-bg-size;
+  @apply bg-custom-gray-light bg-custom-grid-bg-image bg-custom-grid-bg-size font-noto-sans;
 }

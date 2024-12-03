@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 export const Register: React.FC = () => {
   const navigate = useNavigate();
 
-  const [nickNameValue, setNickNameValue] = useState("");
+  const [nicknameValue, setNicknameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
 
@@ -17,12 +17,12 @@ export const Register: React.FC = () => {
     setPasswordValue(value);
   };
 
-  const handleNickNameChange = (value: string) => {
-    setNickNameValue(value);
+  const handleNicknameChange = (value: string) => {
+    setNicknameValue(value);
   };
 
   const handleSubmit = () => {
-    console.log("Input Value:", nickNameValue, emailValue, passwordValue);
+    console.log("Input Value:", nicknameValue, emailValue, passwordValue);
   };
 
   const handleLogin = () => {
@@ -41,9 +41,9 @@ export const Register: React.FC = () => {
     <div className="mb-4">
       <InputField
         type="text"
-        placeholder="Nick Name"
-        value={nickNameValue}
-        onChange={handleNickNameChange}
+        placeholder="Nickname"
+        value={nicknameValue}
+        onChange={handleNicknameChange}
       />
     </div>
 

@@ -556,6 +556,11 @@ video {
   display: none;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -580,12 +585,56 @@ video {
   display: none;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
+.h-7{
+  height: 1.75rem;
+}
+
 .h-dvh{
   height: 100dvh;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
+.h-11{
+  height: 2.75rem;
+}
+
+.h-12{
+  height: 3rem;
+}
+
+.w-7{
+  width: 1.75rem;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
 }
 
 .flex-col{
@@ -600,12 +649,28 @@ video {
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
 
 .border-2{
   border-width: 2px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
 }
 
 .border-custom-black{
@@ -646,9 +711,19 @@ video {
   padding: 1rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-6{
@@ -666,16 +741,25 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-0{
+  padding-bottom: 0px;
+}
+
 .text-center{
   text-align: center;
+}
+
+.font-azeret{
+  font-family: Azeret Mono, monospace;
 }
 
 .font-paytone{
   font-family: Paytone One, sans-serif;
 }
 
-.font-azeret{
-  font-family: Azeret Mono, monospace;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl{
@@ -705,6 +789,17 @@ video {
 .text-custom-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.ring-2{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-custom-black{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(0 4 0 / var(--tw-ring-opacity, 1));
 }
 
 html{
@@ -744,6 +839,58 @@ html{
 @media (min-width: 640px){
   .sm\:block{
     display: block;
+  }
+
+  .sm\:h-16{
+    height: 4rem;
+  }
+
+  .sm\:h-8{
+    height: 2rem;
+  }
+
+  .sm\:h-10{
+    height: 2.5rem;
+  }
+
+  .sm\:h-11{
+    height: 2.75rem;
+  }
+
+  .sm\:h-14{
+    height: 3.5rem;
+  }
+
+  .sm\:h-12{
+    height: 3rem;
+  }
+
+  .sm\:w-8{
+    width: 2rem;
+  }
+
+  .sm\:w-10{
+    width: 2.5rem;
+  }
+
+  .sm\:w-11{
+    width: 2.75rem;
+  }
+
+  .sm\:w-14{
+    width: 3.5rem;
+  }
+
+  .sm\:w-12{
+    width: 3rem;
+  }
+
+  .sm\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .sm\:pb-1{
+    padding-bottom: 0.25rem;
   }
 }
 

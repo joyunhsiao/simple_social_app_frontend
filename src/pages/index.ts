@@ -1,3 +1,4 @@
+import { AuthenticatedLayout } from "./AuthenticatedLayout";
 import { Authform } from "./Authform";
 import { EditProfile } from "./EditProfile";
 import { Followers } from "./Followers";
@@ -9,4 +10,4 @@ import { Post } from "./Post";
 import { Register } from "./Register";
 import { UserProfile } from "./UserProfile";
 
-export { Authform, EditProfile, Followers, Home, LikedPosts, Login, NotFound, Post, Register, UserProfile };
+export { AuthenticatedLayout, Authform, EditProfile, Followers, Home, LikedPosts, Login, NotFound, Post, Register, UserProfile };

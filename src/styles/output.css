@@ -873,14 +873,14 @@ video {
   color: rgb(3 67 141 / var(--tw-text-opacity, 1));
 }
 
-.text-custom-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-custom-gray{
   --tw-text-opacity: 1;
   color: rgb(155 152 147 / var(--tw-text-opacity, 1));
+}
+
+.text-custom-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .ring-2{

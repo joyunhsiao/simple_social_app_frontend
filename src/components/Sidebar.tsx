@@ -17,7 +17,7 @@ export const Sidebar = () => {
   };
   const handleFollowersClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-    navigate("/followers");
+    navigate("/following-list");
   };
   const handleLikedPostsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();

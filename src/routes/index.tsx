@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import { AuthenticatedLayout, Authform, EditProfile, Followers, Home, LikedPosts, Login, NotFound, Post, Register, UserProfile } from "../pages";
+import { AuthenticatedLayout, Authform, EditProfile, FollowingList, Home, LikedPosts, Login, NotFound, Post, Register, UserProfile } from "../pages";
 
 export const AppRoutes = () => {
   return <>
@@ -11,7 +11,7 @@ export const AppRoutes = () => {
         </Route>
         <Route element={<AuthenticatedLayout />}>
           <Route index path="/" element={<Home />} />
-          <Route path="/followers" element={<Followers />} />
+          <Route path="/following-list" element={<FollowingList />} />
           <Route path="/liked-posts" element={<LikedPosts />} />
           <Route path="/post" element={<Post />} />
           <Route path="/profile">

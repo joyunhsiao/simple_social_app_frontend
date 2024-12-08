@@ -1,6 +1,6 @@
 import { FollowListItem, PageHeader } from "../components"
 
-export const FollowingList = () => {
+export const FollowingList: React.FC = () => {
   return <>
     <PageHeader text="Following List" />
     <FollowListItem name="A" />

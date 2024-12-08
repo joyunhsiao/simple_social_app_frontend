@@ -1,6 +1,6 @@
 import { LikedPostsItem, PageHeader } from "../components"
 
-export const LikedPosts = () => {
+export const LikedPosts: React.FC = () => {
   return <>
     <PageHeader text="Posts I Liked" />
     <LikedPostsItem name="A" />

@@ -805,14 +805,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-0{
@@ -859,11 +859,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -881,6 +876,11 @@ video {
 .text-custom-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-custom-gray{
+  --tw-text-opacity: 1;
+  color: rgb(155 152 147 / var(--tw-text-opacity, 1));
 }
 
 .ring-2{
@@ -925,6 +925,10 @@ html{
 .hover\:text-custom-blue:hover{
   --tw-text-opacity: 1;
   color: rgb(3 67 141 / var(--tw-text-opacity, 1));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .focus\:outline-none:focus{

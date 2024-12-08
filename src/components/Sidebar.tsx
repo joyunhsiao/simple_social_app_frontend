@@ -8,10 +8,21 @@ import { BiLike } from "react-icons/bi";
 export const Sidebar = () => {
   const navigate = useNavigate();
 
-  const handleCreatePost = () => { navigate("/post"); };
-  const handleMyPostsClick = () => { navigate("/"); };
-  const handleFollowersClick = () => { navigate("/followers"); };
-  const handleLikedPostsClick = () => { navigate("/liked-posts"); };
+  const handleCreatePost = () => {
+    navigate("/post");
+  };
+  const handleMyPostsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    navigate("/");
+  };
+  const handleFollowersClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    navigate("/followers");
+  };
+  const handleLikedPostsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    navigate("/liked-posts");
+  };
 
   return <>
     <div className="
@@ -47,7 +58,7 @@ export const Sidebar = () => {
         />
         My Posts
       </a>
-      <a onClick={handleFollowersClick} className="
+      <a href="#" onClick={(e) => handleFollowersClick(e)} className="
         flex
         gap-4
         items-center
@@ -78,7 +89,7 @@ export const Sidebar = () => {
         </div>
         Followed Accounts
       </a>
-      <a onClick={handleLikedPostsClick} className="
+      <a href="#" onClick={(e) => handleLikedPostsClick(e)} className="
         flex
         gap-4
         items-center

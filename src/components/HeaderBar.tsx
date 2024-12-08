@@ -7,17 +7,20 @@ export const HeaderBar: React.FC = () => {
 
   const [isMenuShow, setIsMenuShow] = useState(false);
   
-  const handleLogoClick = () => {
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
     navigate("/");
   };
 
-  const handleAvatarClick = () => {
+  const handleAvatarClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
     setIsMenuShow(prev => !prev);
   };
 
-  const handleAccountSettingsClick = () => {
+  const handleAccountSettingsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
     navigate("/profile/edit");
-    handleAvatarClick();
+    handleAvatarClick(e);
   };
 
   return <>
@@ -42,12 +45,12 @@ export const HeaderBar: React.FC = () => {
           text-custom-black
           text-2xl
         ">
-          <a href="#" onClick={handleLogoClick}>
+          <a href="#" onClick={(e) => {handleLogoClick(e)}}>
             MetaWall
           </a>
         </h1>
         <div className="relative inline-block text-left">
-          <a onClick={handleAvatarClick} className="
+          <a onClick={(e) => handleAvatarClick(e)} className="
             flex
             gap-1
             sm:gap-2
@@ -81,7 +84,7 @@ export const HeaderBar: React.FC = () => {
             focus:outline-none
             ${isMenuShow ? "" : "hidden"}
           `}>
-            <a href="#" onClick={handleAccountSettingsClick} className="
+            <a href="#" onClick={(e) => handleAccountSettingsClick(e)} className="
               block
               px-4
               py-2

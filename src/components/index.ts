@@ -9,6 +9,7 @@ import { ErrorMessage } from "./ErrorMessage";
 import { FollowListItem } from "./FollowListItem";
 import { HeaderBar } from "./HeaderBar";
 import { InputField } from "./InputField";
+import { LikedPostsItem } from "./LikedPostsItem";
 import { PageHeader } from "./PageHeader";
 import { PostCard } from "./PostCard";
 import { PostEditor } from "./PostEditor";
@@ -22,4 +23,5 @@ import { Tabs } from "./Tabs";
 import { UploadButton } from "./UploadButton";
 import { UserCard } from "./UserCard";
 
-export { AuthBox, Button, CircularImageWrapper, CommentSection, DropdownMenu, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserProfile };
+export { AuthBox, Button, CircularImageWrapper, CommentSection, DropdownMenu, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserProfile };
+

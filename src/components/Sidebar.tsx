@@ -9,7 +9,7 @@ export const Sidebar = () => {
   const navigate = useNavigate();
 
   const handleCreatePost = () => { navigate("/post"); };
-  const handleProfileClick = () => { navigate("/profile/edit"); };
+  const handleMyPostsClick = () => { navigate("/"); };
   const handleFollowersClick = () => { navigate("/followers"); };
   const handleLikedPostsClick = () => { navigate("/liked-posts"); };
 
@@ -29,7 +29,7 @@ export const Sidebar = () => {
           onClick={handleCreatePost}
         />
       </div>
-      <a onClick={handleProfileClick} className="
+      <a onClick={handleMyPostsClick} className="
         flex
         gap-4
         items-center
@@ -45,7 +45,7 @@ export const Sidebar = () => {
           size="lg"
           alt="profile photo"
         />
-        Member
+        My Posts
       </a>
       <a onClick={handleFollowersClick} className="
         flex

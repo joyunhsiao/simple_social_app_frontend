@@ -1,10 +1,23 @@
 import { useState } from "react";
 import { CircularImageWrapper } from "./CircularImageWrapper"
+import { useNavigate } from "react-router";
 
 export const HeaderBar: React.FC = () => {
+  const navigate = useNavigate();
+
   const [isMenuShow, setIsMenuShow] = useState(false);
+  
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   const handleAvatarClick = () => {
     setIsMenuShow(prev => !prev);
+  };
+
+  const handleAccountSettingsClick = () => {
+    navigate("/profile/edit");
+    handleAvatarClick();
   };
 
   return <>
@@ -29,7 +42,9 @@ export const HeaderBar: React.FC = () => {
           text-custom-black
           text-2xl
         ">
-          MetaWall
+          <a href="#" onClick={handleLogoClick}>
+            MetaWall
+          </a>
         </h1>
         <div className="relative inline-block text-left">
           <a onClick={handleAvatarClick} className="
@@ -66,7 +81,7 @@ export const HeaderBar: React.FC = () => {
             focus:outline-none
             ${isMenuShow ? "" : "hidden"}
           `}>
-            <a href="#" className="
+            <a href="#" onClick={handleAccountSettingsClick} className="
               block
               px-4
               py-2
@@ -77,30 +92,6 @@ export const HeaderBar: React.FC = () => {
               hover:bg-custom-gray-light
             ">
               Account settings
-            </a>
-            <a href="#" className="
-              block
-              px-4
-              py-2
-              text-sm
-              text-custom-black
-              border-b-2
-              border-custom-black
-              hover:bg-custom-gray-light
-            ">
-              Support
-            </a>
-            <a href="#" className="
-              block
-              px-4
-              py-2
-              text-sm
-              text-custom-black
-              border-b-2
-              border-custom-black
-              hover:bg-custom-gray-light
-            ">
-              License
             </a>
             <form method="POST" action="#">
               <button type="submit" className="

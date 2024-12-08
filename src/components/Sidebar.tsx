@@ -9,7 +9,7 @@ export const Sidebar = () => {
   const navigate = useNavigate();
 
   const handleCreatePost = () => {
-    navigate("/post");
+    navigate("/create-post");
   };
   const handleMyPostsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();

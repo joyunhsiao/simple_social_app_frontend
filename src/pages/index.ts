@@ -6,8 +6,8 @@ import { Home } from "./Home";
 import { LikedPosts } from "./LikedPosts";
 import { Login } from "./Login";
 import { NotFound } from "./NotFound";
-import { Post } from "./Post";
+import { CreatePost } from "./CreatePost";
 import { Register } from "./Register";
 import { UserProfile } from "./UserProfile";
 
-export { AuthenticatedLayout, Authform, EditProfile, FollowingList, Home, LikedPosts, Login, NotFound, Post, Register, UserProfile };
+export { AuthenticatedLayout, Authform, EditProfile, FollowingList, Home, LikedPosts, Login, NotFound, CreatePost, Register, UserProfile };

@@ -6,7 +6,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   text
 }) => {
   return <>
-    <div className="
+    <h2 className="
       bg-custom-white
       text-center
       text-xl
@@ -17,6 +17,6 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
       mb-4
     ">
       {text}
-    </div>
+    </h2>
   </>
 }

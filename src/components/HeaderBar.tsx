@@ -57,7 +57,7 @@ export const HeaderBar: React.FC = () => {
             cursor-pointer
           ">
             <CircularImageWrapper
-              imgSrc="./src/assets/profile_photo.jpg"
+              imgSrc="../src/assets/profile_photo.jpg"
               size="sm"
               alt="profile photo"
             />

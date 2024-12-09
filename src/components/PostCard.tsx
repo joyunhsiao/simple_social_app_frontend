@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { CircularImageWrapper } from "./CircularImageWrapper";
 import { SquareImageWrapper } from "./SquareImageWrapper";
+import { CommentSection } from "./CommentSection";
 
 interface PostCardProps {
   name: string;
@@ -67,6 +68,7 @@ export const PostCard: React.FC<PostCardProps> = ({
           />
         </div>
       )}
+      <CommentSection />
     </div>
   </>
 }

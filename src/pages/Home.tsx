@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { PostCard, SearchBar } from "../components"
+import { DropdownSort, PostCard, SearchBar } from "../components"
 
 export const Home: React.FC = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -14,8 +14,13 @@ export const Home: React.FC = () => {
 
   return <>
     <div className="
+      flex
+      gap-3
       mb-4
     ">
+      <div className="w-40">
+        <DropdownSort />
+      </div>
       <SearchBar value={searchValue} onChange={handleSearchValueChange} onClick={handleSubmit}/>
     </div>
     <PostCard name="A" isImg={true} />

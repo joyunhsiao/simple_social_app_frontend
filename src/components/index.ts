@@ -23,6 +23,7 @@ import { SquareImageWrapper } from "./SquareImageWrapper";
 import { Tabs } from "./Tabs";
 import { UploadButton } from "./UploadButton";
 import { UserCard } from "./UserCard";
+import { UserInfoCard } from "./UserInfoCard";
 
-export { AuthBox, Button, CircularImageWrapper, CommentDisplay, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserProfile };
+export { AuthBox, Button, CircularImageWrapper, CommentDisplay, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserInfoCard, UserProfile };
 

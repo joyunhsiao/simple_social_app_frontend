@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { DropdownSort, PostCard, SearchBar } from "../components"
+import { DropdownSort, PostCard, SearchBar, UserInfoCard } from "../components"
 
 export const Home: React.FC = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -13,6 +13,7 @@ export const Home: React.FC = () => {
   };
 
   return <>
+    <UserInfoCard name="A" />
     <div className="
       flex
       gap-3

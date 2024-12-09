@@ -49,7 +49,7 @@ export const HeaderBar: React.FC = () => {
             MetaWall
           </a>
         </h1>
-        <div className="relative inline-block text-left">
+        <div className="relative">
           <a onClick={(e) => handleAvatarClick(e)} className="
             flex
             gap-1

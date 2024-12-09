@@ -2,6 +2,7 @@ import { UserProfile } from "../pages";
 import { AuthBox } from "./AuthBox";
 import { Button } from "./Button";
 import { CircularImageWrapper } from "./CircularImageWrapper";
+import { CommentDisplay } from "./CommentDisplay";
 import { CommentSection } from "./CommentSection";
 import { DropdownSort } from "./DropdownSort";
 import { EmptyState } from "./EmptyState";
@@ -23,5 +24,5 @@ import { Tabs } from "./Tabs";
 import { UploadButton } from "./UploadButton";
 import { UserCard } from "./UserCard";
 
-export { AuthBox, Button, CircularImageWrapper, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserProfile };
+export { AuthBox, Button, CircularImageWrapper, CommentDisplay, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserProfile };
 

@@ -15,6 +15,7 @@ import { PageHeader } from "./PageHeader";
 import { PostCard } from "./PostCard";
 import { PostEditor } from "./PostEditor";
 import { ProfilePicUpload } from "./ProfilePicUpload";
+import { RadioGroup } from "./RadioGroup";
 import { RadioInput } from "./RadioInput";
 import { SearchBar } from "./SearchBar";
 import { Sidebar } from "./Sidebar";
@@ -25,5 +26,5 @@ import { UploadButton } from "./UploadButton";
 import { UserCard } from "./UserCard";
 import { UserInfoCard } from "./UserInfoCard";
 
-export { AuthBox, Button, CircularImageWrapper, CommentDisplay, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserInfoCard, UserProfile };
+export { AuthBox, Button, CircularImageWrapper, CommentDisplay, CommentSection, DropdownSort, EmptyState, ErrorMessage, FollowListItem, HeaderBar, InputField, LikedPostsItem, PageHeader, PostCard, PostEditor, ProfilePicUpload, RadioGroup, RadioInput, SearchBar, Sidebar, SidebarIcon, SquareImageWrapper, Tabs, UploadButton, UserCard, UserInfoCard, UserProfile };
 

@@ -29,8 +29,8 @@ export const Register: React.FC = () => {
       password: passwordValue
     })
       .then(response => {
-        const token = response.data.user.token;
-        localStorage.setItem('jwt', token);
+        alert(response.status); // todo
+        navigate("/login");
       })
       .catch(error => {
         console.error("Error fetching public data:", error);

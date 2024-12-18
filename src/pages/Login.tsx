@@ -25,6 +25,7 @@ export const Login: React.FC = () => {
       .then(response => {
         const token = response.data.user.token;
         localStorage.setItem('jwt', token);
+        navigate("/");
       })
       .catch(error => {
         console.error("Error fetching public data:", error);

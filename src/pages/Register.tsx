@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, InputField } from "../components"
 import { useNavigate } from "react-router";
+import { axiosInstance } from "../connections/axios";
 
 export const Register: React.FC = () => {
   const navigate = useNavigate();
@@ -22,7 +23,17 @@ export const Register: React.FC = () => {
   };
 
   const handleSubmit = () => {
-    console.log("Input Value:", nicknameValue, emailValue, passwordValue);
+    axiosInstance.post("/users/register", {
+      name: nicknameValue,
+      email: emailValue,
+      password: passwordValue
+    })
+      .then(response => {
+        console.log("Public data:", response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching public data:", error);
+      });
   };
 
   const handleLogin = () => {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import profilePhoto from "../assets/profile_photo.jpg";
 
 interface UserInfoCardProps {
   name: string;
@@ -37,7 +38,7 @@ export const UserInfoCard: React.FC<UserInfoCardProps> = ({
         border-r-2
         border-custom-black
       ">
-        <img src="../src/assets/profile_photo.jpg" alt="profile photo" className="
+        <img src={profilePhoto} alt="profile photo" className="
           h-full
         "/>
       </div>

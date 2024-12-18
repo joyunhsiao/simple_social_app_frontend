@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import { AuthenticatedLayout, Authform, AccountSettings, FollowingList, Home, LikedPosts, Login, NotFound, CreatePost, Register, UserProfile } from "../pages";
 
 export const AppRoutes = () => {
   return <>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Authform />}>
           <Route index path="login" element={<Login />} />
@@ -21,6 +21,6 @@ export const AppRoutes = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </>
 }

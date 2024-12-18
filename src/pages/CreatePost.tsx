@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, PageHeader, SquareImageWrapper, UploadButton } from "../components";
+import postPhoto from "../assets/post_photo.jpg";
 
 export const CreatePost: React.FC = () => {
   const [textValue, setTextValue] = useState("");
@@ -57,7 +58,7 @@ export const CreatePost: React.FC = () => {
         mb-8
       ">
         <SquareImageWrapper
-          imgSrc="../src/assets/post_photo.jpg"
+          imgSrc={postPhoto}
           alt="post photo"
         />
       </div>

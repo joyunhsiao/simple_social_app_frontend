@@ -3,7 +3,7 @@ import { Button } from "./Button"
 import { CircularImageWrapper } from "./CircularImageWrapper";
 import { FaRegBell } from "react-icons/fa";
 import { BiLike } from "react-icons/bi";
-
+import profilePhoto from "../assets/profile_photo.jpg";
 
 export const Sidebar = () => {
   const navigate = useNavigate();
@@ -52,7 +52,7 @@ export const Sidebar = () => {
         hover:text-custom-blue
       ">
         <CircularImageWrapper
-          imgSrc="../src/assets/profile_photo.jpg"
+          imgSrc={profilePhoto}
           size="lg"
           alt="profile photo"
         />

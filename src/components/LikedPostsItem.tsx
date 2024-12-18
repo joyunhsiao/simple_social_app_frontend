@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import { CircularImageWrapper } from "./CircularImageWrapper";
 import { BiLike } from "react-icons/bi";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import profilePhoto from "../assets/profile_photo.jpg";
 
 interface LikedPostsItemProps {
   name: string;
@@ -40,7 +41,7 @@ export const LikedPostsItem: React.FC<LikedPostsItemProps> = ({
       mb-4
     ">
       <CircularImageWrapper
-        imgSrc="../src/assets/profile_photo.jpg"
+        imgSrc={profilePhoto}
       />
       <div className="
         w-full

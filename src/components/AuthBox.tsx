@@ -1,4 +1,5 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
+import authIllustration from "../assets/auth_side_illustration.svg";
 
 interface AuthBoxProps {
   children: ReactNode;
@@ -17,7 +18,7 @@ export const AuthBox: React.FC<AuthBoxProps> = ({ children }) => {
       px-12
     ">
       <img
-        src="../src/assets/auth_side_illustration.svg"
+        src={authIllustration}
         alt="An illustration of people chatting on social media."
         className="
           hidden

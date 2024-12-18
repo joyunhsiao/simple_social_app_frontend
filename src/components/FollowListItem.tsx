@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import { CircularImageWrapper } from "./CircularImageWrapper"
+import profilePhoto from "../assets/profile_photo.jpg";
 
 interface FollowListItemProps {
   name: string;
@@ -28,7 +29,7 @@ export const FollowListItem: React.FC<FollowListItemProps> = ({
       mb-4
     ">
       <CircularImageWrapper
-        imgSrc="../src/assets/profile_photo.jpg"
+        imgSrc={profilePhoto}
       />
       <div className="
         w-full

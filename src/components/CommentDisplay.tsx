@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import { CircularImageWrapper } from "./CircularImageWrapper";
+import profilePhoto from "../assets/profile_photo.jpg";
 
 interface CommentDisplayProps {
   name: string;
@@ -25,7 +26,7 @@ export const CommentDisplay: React.FC<CommentDisplayProps> = ({
       mt-4
     ">
       <CircularImageWrapper
-        imgSrc="../src/assets/profile_photo.jpg"
+        imgSrc={profilePhoto}
         alt="profile photo"
         size="sm"
       />

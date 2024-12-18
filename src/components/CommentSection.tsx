@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BiLike } from "react-icons/bi";
 import { CircularImageWrapper } from "./CircularImageWrapper";
 import { CommentDisplay } from "./CommentDisplay";
+import profilePhoto from "../assets/profile_photo.jpg";
 
 export const CommentSection: React.FC = () => {
   const [isLiked, setIsLiked] = useState(false);
@@ -51,7 +52,7 @@ export const CommentSection: React.FC = () => {
       gap-3
     ">
       <CircularImageWrapper
-        imgSrc="../src/assets/profile_photo.jpg"
+        imgSrc={profilePhoto}
         alt="profile photo"
         size="sm"
       />

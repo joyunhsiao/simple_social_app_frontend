@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CircularImageWrapper } from "./CircularImageWrapper"
 import { useNavigate } from "react-router";
+import profilePhoto from "../assets/profile_photo.jpg";
 
 export const HeaderBar: React.FC = () => {
   const navigate = useNavigate();
@@ -57,7 +58,7 @@ export const HeaderBar: React.FC = () => {
             cursor-pointer
           ">
             <CircularImageWrapper
-              imgSrc="../src/assets/profile_photo.jpg"
+              imgSrc={profilePhoto}
               size="sm"
               alt="profile photo"
             />

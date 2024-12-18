@@ -2,6 +2,8 @@ import { useNavigate } from "react-router";
 import { CircularImageWrapper } from "./CircularImageWrapper";
 import { SquareImageWrapper } from "./SquareImageWrapper";
 import { CommentSection } from "./CommentSection";
+import profilePhoto from "../assets/profile_photo.jpg";
+import postPhoto from "../assets/post_photo.jpg";
 
 interface PostCardProps {
   name: string;
@@ -36,7 +38,7 @@ export const PostCard: React.FC<PostCardProps> = ({
         mb-4
       ">
         <CircularImageWrapper
-          imgSrc="../src/assets/profile_photo.jpg"
+          imgSrc={profilePhoto}
         />
         <div className="
           w-full
@@ -63,7 +65,7 @@ export const PostCard: React.FC<PostCardProps> = ({
       {isImg && (
         <div className="mt-4">
           <SquareImageWrapper
-            imgSrc="../src/assets/post_photo.jpg"
+            imgSrc={postPhoto}
             alt="post photo"
           />
         </div>
